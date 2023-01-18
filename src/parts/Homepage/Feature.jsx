@@ -7,8 +7,8 @@ import Button from "../../components/Button";
 export default function Feature() {
   return (
     <section className="feature section">
-      <div className="feature__container container grid gap-12">
-        <div className="feature__data justify-self-center text-center">
+      <div className="feature__container container grid gap-12 lg:grid-cols-2 lg:items-center xl:max-w-5xl">
+        <div className="feature__data justify-self-center text-center xs:max-w-sm sm:max-w-md lg:order-2 lg:max-w-full lg:text-left">
           <h1 className="feature__title section-title">
             We help you to boost your business profitable with our talent
             marketer
@@ -27,13 +27,15 @@ export default function Feature() {
               Completely responsive features
             </li>
           </ul>
-          <Button url="/feature">Explore details</Button>
+          <Button url="/feature" className="inline-flex">
+            Explore details
+          </Button>
         </div>
 
         <img
           src={FeatureImg}
           alt="feature img"
-          className="feature__img justify-self-center"
+          className="feature__img justify-self-center xs:max-w-sm sm:max-w-md lg:max-w-full"
         />
       </div>
     </section>
