@@ -8,6 +8,7 @@ import User from "../parts/Homepage/User";
 import Work from "../parts/Homepage/Work";
 import Callback from "../components/Callback";
 import Footer from "../components/Footer";
+import ScrollUp from "../components/ScrollUp";
 
 export default function Homepage() {
   return (
@@ -20,6 +21,7 @@ export default function Homepage() {
       <Work />
       <Callback />
       <Footer />
+      <ScrollUp />
     </>
   );
 }
