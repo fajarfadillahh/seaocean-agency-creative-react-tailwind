@@ -27,11 +27,11 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-16 text-center shadow-lg transition-all duration-300 ${
+          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-16 text-center shadow-lg transition-all duration-300 md:static md:top-0 md:flex md:w-max md:scale-y-100 md:items-center md:gap-8 md:p-0 md:opacity-100 md:shadow-none lg:gap-12 ${
             menuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
           }`}
         >
-          <ul className="header__list mb-6 flex flex-col gap-6">
+          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex-row lg:gap-8">
             {[
               ["About Us", "/about-us"],
               ["Pricing", "/pricing"],
@@ -53,7 +53,7 @@ export default function Header() {
         </div>
 
         <div
-          className="header__toggle inline-flex cursor-pointer text-[1.3rem] text-gray-900"
+          className="header__toggle inline-flex cursor-pointer text-[1.3rem] text-gray-900 md:hidden"
           onClick={setHandleMenu}
         >
           {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
