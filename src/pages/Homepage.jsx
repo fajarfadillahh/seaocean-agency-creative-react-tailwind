@@ -6,6 +6,7 @@ import Services from "../parts/Homepage/Services";
 import Feature from "../parts/Homepage/Feature";
 import User from "../parts/Homepage/User";
 import Work from "../parts/Homepage/Work";
+import Callback from "../components/Callback";
 
 export default function Homepage() {
   return (
@@ -16,6 +17,7 @@ export default function Homepage() {
       <Feature />
       <User />
       <Work />
+      <Callback />
     </>
   );
 }
