@@ -1,0 +1,23 @@
+/* ===== Poppins Font ===== */
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+/* ===== Bree Serif Font ===== */
+@font-face {
+  font-family: "Bree Serif";
+  font-weight: 400;
+  src: url("../fonts/BreeSerif/BreeSerif-Regular.ttf") format("truetype");
+}

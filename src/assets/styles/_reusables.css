@@ -1,0 +1,17 @@
+@layer components {
+  /* section class */
+  .section {
+    @apply pt-32 pb-16;
+  }
+  .section-title {
+    @apply pb-4 font-serif text-[28px] font-normal text-gray-900;
+  }
+  .section-text {
+    @apply pb-8 text-[16px] leading-text text-gray-600;
+  }
+
+  /* container class */
+  .container {
+    @apply mx-auto w-[calc(100%-3rem)] max-w-6xl;
+  }
+}
