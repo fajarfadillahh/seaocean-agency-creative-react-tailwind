@@ -13,7 +13,7 @@ export default function ErrorMessage() {
           <p className="error__text section-text">
             The page you're looking for was not found
           </p>
-          <Button url="/" className="sm:inline-flex">
+          <Button url="/" className="xs:inline-flex">
             Back to Home
           </Button>
         </div>
