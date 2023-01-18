@@ -7,7 +7,7 @@
     @apply pb-4 font-serif text-[28px] font-normal text-gray-900;
   }
   .section-text {
-    @apply pb-8 text-[16px] leading-text text-gray-600;
+    @apply pb-8 text-[15px] leading-text text-gray-600;
   }
 
   /* container class */
