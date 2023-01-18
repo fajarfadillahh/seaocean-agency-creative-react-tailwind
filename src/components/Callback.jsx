@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function Callback() {
   return (
     <section className="callback section">
-      <div className="callback__container container grid gap-8">
+      <div className="callback__container container grid gap-8 xs:max-w-sm sm:max-w-md lg:max-w-xl">
         <div className="callback__data justify-self-center text-center">
           <h1 className="callback__title section-title">
             Do you have any question? Feel free to contact us
@@ -16,7 +16,9 @@ export default function Callback() {
           </p>
         </div>
 
-        <Button url="/contact-us">Contact us</Button>
+        <Button url="/contact-us" className="lg:justify-self-center">
+          Contact us
+        </Button>
       </div>
     </section>
   );
