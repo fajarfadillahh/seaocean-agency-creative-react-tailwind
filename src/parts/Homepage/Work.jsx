@@ -5,7 +5,7 @@ export default function Work() {
     <section className="work section">
       <div className="work__wrapper bg-[#f9fafc] py-16">
         <div className="work__container container grid gap-12">
-          <div className="work__data justify-self-center text-center">
+          <div className="work__data justify-self-center text-center xs:max-w-sm sm:max-w-md lg:max-w-xl">
             <h1 className="work__title section-title">
               Let's meet how its work
             </h1>
@@ -16,7 +16,7 @@ export default function Work() {
             </p>
           </div>
 
-          <div className="work__group grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] items-center gap-8">
+          <div className="work__group grid items-center gap-8 justify-self-center xs:max-w-sm sm:max-w-md lg:max-w-3xl lg:grid-cols-2 xl:max-w-5xl xl:grid-cols-3">
             <div className="work__content flex items-start gap-6">
               <h3 className="work__number font-serif text-[28px] text-gray-900">
                 01
