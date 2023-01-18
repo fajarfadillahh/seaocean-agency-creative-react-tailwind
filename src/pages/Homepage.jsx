@@ -7,6 +7,7 @@ import Feature from "../parts/Homepage/Feature";
 import User from "../parts/Homepage/User";
 import Work from "../parts/Homepage/Work";
 import Callback from "../components/Callback";
+import Footer from "../components/Footer";
 
 export default function Homepage() {
   return (
@@ -18,6 +19,7 @@ export default function Homepage() {
       <User />
       <Work />
       <Callback />
+      <Footer />
     </>
   );
 }
