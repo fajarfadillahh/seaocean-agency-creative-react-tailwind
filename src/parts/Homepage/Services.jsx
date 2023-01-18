@@ -9,7 +9,7 @@ export default function Services() {
     <section className="services section">
       <div className="services__wrapper bg-[#f9fafc] py-16">
         <div className="services__container container grid gap-12">
-          <div className="services__data justify-self-center text-center">
+          <div className="services__data justify-self-center text-center xs:max-w-sm sm:max-w-md lg:max-w-xl">
             <h1 className="services__title section-title">
               Go Beyond unlimited features
             </h1>
@@ -20,7 +20,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="services__group grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] items-center gap-8">
+          <div className="services__group grid items-center gap-8 justify-self-center xs:max-w-sm sm:max-w-md lg:max-w-3xl lg:grid-cols-2 xl:max-w-5xl xl:grid-cols-3">
             <div className="services__content flex items-start gap-6">
               <img
                 src={ServicesIcon1}
