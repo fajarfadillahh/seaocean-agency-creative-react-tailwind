@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="footer pt-32 pb-8">
       <div className="footer__container container grid gap-24">
-        <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12">
+        <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12 xl:grid-cols-[1fr,repeat(3,0.5fr)]">
           <div className="footer__content">
             <Link
               to="/"
@@ -20,7 +20,7 @@ export default function Footer() {
               />
               SeaOcean.
             </Link>
-            <p className="footer__content-text section-text pb-0">
+            <p className="footer__content-text section-text pb-0 lg:max-w-[320px]">
               Get your blood tests delivered at let home collect sample from the
               victory.
             </p>
