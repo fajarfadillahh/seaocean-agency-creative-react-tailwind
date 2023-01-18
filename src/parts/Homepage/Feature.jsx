@@ -27,7 +27,7 @@ export default function Feature() {
               Completely responsive features
             </li>
           </ul>
-          <Button url="/feature" className="inline-flex">
+          <Button url="/feature" className="lg:inline-flex">
             Explore details
           </Button>
         </div>

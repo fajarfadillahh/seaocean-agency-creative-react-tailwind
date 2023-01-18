@@ -6,7 +6,7 @@ export default function User() {
   return (
     <section className="user section">
       <div className="user__container container grid gap-12">
-        <div className="user__data justify-self-center text-center">
+        <div className="user__data justify-self-center text-center xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
           <h1 className="user__title section-title">
             More than thousand of user we have worldwide with happy feedback
           </h1>
@@ -19,7 +19,7 @@ export default function User() {
         <img
           src={UserImg}
           alt="user immg"
-          className="user__img justify-self-center"
+          className="user__img justify-self-center xl:max-w-5xl"
         />
       </div>
     </section>
