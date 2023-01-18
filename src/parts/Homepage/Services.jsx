@@ -21,7 +21,7 @@ export default function Services() {
           </div>
 
           <div className="services__group grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] items-center gap-8">
-            <div className="services__content flex items-start gap-4">
+            <div className="services__content flex items-start gap-6">
               <img
                 src={ServicesIcon1}
                 alt="service icon"
@@ -39,7 +39,7 @@ export default function Services() {
               </div>
             </div>
 
-            <div className="services__content flex items-start gap-4">
+            <div className="services__content flex items-start gap-6">
               <img
                 src={ServicesIcon2}
                 alt="service icon"
@@ -57,7 +57,7 @@ export default function Services() {
               </div>
             </div>
 
-            <div className="services__content flex items-start gap-4">
+            <div className="services__content flex items-start gap-6">
               <img
                 src={ServicesIcon3}
                 alt="service icon"
