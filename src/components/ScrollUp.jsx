@@ -25,7 +25,7 @@ export default function ScrollUp() {
 
   return (
     <div
-      className="fixed right-6 bottom-16 inline-flex items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white xl:right-16"
+      className="fixed right-6 bottom-16 inline-flex cursor-pointer items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white xl:right-16"
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}
     >
