@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 
 export default function ErrorMessage() {
   return (
-    <div className="error flex h-screen w-full items-center justify-center">
+    <div className="error flex h-screen w-full items-center justify-center transition-all duration-300 dark:bg-gray-900">
       <div className="error__container container">
         <div className="error__data text-center">
           <h1 className="error__title section-title text-[36px] sm:text-[42px] lg:text-[56px]">
