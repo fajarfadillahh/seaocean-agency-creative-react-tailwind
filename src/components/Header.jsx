@@ -6,13 +6,29 @@ import HeaderIcon from "../assets/images/icon.svg";
 import Button from "./Button";
 
 export default function Header() {
+  // header toggle
   const [menuOpen, setMenuOpen] = useState(false);
   const setHandleMenu = () => {
     setMenuOpen((even) => !even);
   };
 
+  // add header shadow when scrolling
+  const [headerShadow, setHeaderShadow] = useState(false);
+  const addHeaderShadow = () => {
+    if (window.scrollY > 10) {
+      setHeaderShadow(true);
+    } else {
+      setHeaderShadow(false);
+    }
+  };
+  window.addEventListener("scroll", addHeaderShadow);
+
   return (
-    <header className="header fixed top-0 left-0 z-20 w-full bg-white">
+    <header
+      className={`header fixed top-0 left-0 z-20 w-full bg-white transition-all duration-300 ${
+        headerShadow ? "shadow-lg" : "shadow-none"
+      }`}
+    >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
