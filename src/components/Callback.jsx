@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Callback() {
   return (
-    <section className="callback section">
+    <section className="callback section transition-all duration-300 dark:bg-gray-900">
       <div className="callback__container container grid gap-8 xs:max-w-sm sm:max-w-md lg:max-w-xl">
         <div className="callback__data justify-self-center text-center">
           <h1 className="callback__title section-title">
