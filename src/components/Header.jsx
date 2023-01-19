@@ -8,12 +8,14 @@ import Button from "./Button";
 export default function Header() {
   // header toggle
   const [menuOpen, setMenuOpen] = useState(false);
+
   const setHandleMenu = () => {
     setMenuOpen((even) => !even);
   };
 
   // add header shadow when scrolling
   const [headerShadow, setHeaderShadow] = useState(false);
+
   useEffect(() => {
     const addHeaderShadow = () => {
       if (window.scrollY >= 50) {

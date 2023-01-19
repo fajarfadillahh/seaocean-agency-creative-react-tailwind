@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
 
 export default function ScrollUp() {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+  useEffect(() => {
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
 
-    if (scrolled > 500) {
-      setVisible(true);
-    } else if (scrolled <= 500) {
-      setVisible(false);
-    }
-  };
+      if (scrolled > 500) {
+        setVisible(true);
+      } else if (scrolled <= 500) {
+        setVisible(false);
+      }
+    };
+    window.addEventListener("scroll", toggleVisible);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,8 +27,6 @@ export default function ScrollUp() {
       behavior: "smooth",
     });
   };
-
-  window.addEventListener("scroll", toggleVisible);
 
   return (
     <div
