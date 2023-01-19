@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { RiMenu3Line, RiCloseLine, RiMoonFill } from "react-icons/ri";
+import {
+  RiMenu3Line,
+  RiCloseLine,
+  RiMoonFill,
+  RiSunFill,
+} from "react-icons/ri";
 
 import useColorMode from "../hooks/useColorMode";
 
@@ -81,7 +86,7 @@ export default function Header() {
               setColorMode(colorMode === "light" ? "dark" : "light")
             }
           >
-            <RiMoonFill />
+            {colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
           </div>
 
           <Button url="/">get started</Button>
