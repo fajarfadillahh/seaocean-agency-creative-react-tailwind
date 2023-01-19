@@ -6,13 +6,7 @@ export default function ScrollUp() {
 
   useEffect(() => {
     const toggleVisible = () => {
-      const scrolled = document.documentElement.scrollTop;
-
-      if (scrolled > 500) {
-        setVisible(true);
-      } else if (scrolled <= 500) {
-        setVisible(false);
-      }
+      window.scrollY >= 600 ? setVisible(true) : setVisible(false);
     };
     window.addEventListener("scroll", toggleVisible);
 
@@ -30,9 +24,10 @@ export default function ScrollUp() {
 
   return (
     <div
-      className="fixed right-6 bottom-16 inline-flex cursor-pointer items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white xl:right-16"
+      className={`fixed right-6 bottom-16 inline-flex cursor-pointer items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white transition-all duration-300 xl:right-16 ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}
       onClick={scrollToTop}
-      style={{ display: visible ? "inline" : "none" }}
     >
       <RiArrowUpLine />
     </div>
