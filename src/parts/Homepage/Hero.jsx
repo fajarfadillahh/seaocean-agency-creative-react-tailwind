@@ -9,7 +9,7 @@ import HeroSponsored3 from "../../assets/images/hero-sponsored-(3).svg";
 
 export default function Hero() {
   return (
-    <section className="hero section xl:pt-40">
+    <section className="hero section transition-all duration-300 dark:bg-gray-900 xl:pt-40">
       <div className="hero__container container grid gap-12 lg:grid-cols-2 lg:items-center xl:max-w-5xl">
         <div className="hero__data grid gap-8 justify-self-center text-center xs:max-w-sm sm:max-w-md lg:max-w-full lg:text-left">
           <div>
@@ -30,7 +30,7 @@ export default function Hero() {
             <input
               type="email"
               placeholder="Enter email address"
-              className="hero__from-input border-300 h-[52px] w-full rounded-lg border px-4 text-center font-semibold text-gray-900 outline-none placeholder:text-[15px] placeholder:font-normal placeholder:text-gray-600 md:text-left"
+              className="hero__from-input h-[52px] w-full rounded-lg border border-gray-300 px-4 text-center font-semibold text-gray-900 outline-none transition-all duration-300 placeholder:text-[15px] placeholder:font-normal placeholder:text-gray-600 dark:border-none dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400 md:text-left"
             />
             <Button url="/" className="hero__from-button">
               Subscibe
@@ -38,7 +38,7 @@ export default function Hero() {
           </form>
 
           <div className="hero__sponsored inline-flex items-center justify-center gap-3 lg:justify-start">
-            <p className="hero__sponsored-text text-[12px] text-gray-600">
+            <p className="hero__sponsored-text text-[12px] text-gray-600 dark:text-white">
               Sponsored by:
             </p>
 
