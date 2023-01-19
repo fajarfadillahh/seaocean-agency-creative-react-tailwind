@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 
 export default function Feature() {
   return (
-    <section className="feature section">
+    <section className="feature section transition-all duration-300 dark:bg-gray-900">
       <div className="feature__container container grid gap-12 lg:grid-cols-2 lg:items-center xl:max-w-5xl">
         <div className="feature__data justify-self-center text-center xs:max-w-sm sm:max-w-md lg:order-2 lg:max-w-full lg:text-left">
           <h1 className="feature__title section-title">
@@ -18,11 +18,11 @@ export default function Feature() {
             of the managments that supplies best design system guidelines ever.
           </p>
           <ul className="feature__list flex flex-col gap-4 pb-8">
-            <li className="feature__item inline-flex items-center gap-2 text-[15px] text-gray-600">
+            <li className="feature__item inline-flex items-center gap-2 text-[15px] text-gray-600 dark:text-white">
               <RiCheckboxCircleLine className="text-[1.3rem] text-red-600" />
               Unlimited design possibility
             </li>
-            <li className="feature__item inline-flex items-center gap-2 text-[15px] text-gray-600">
+            <li className="feature__item inline-flex items-center gap-2 text-[15px] text-gray-600 dark:text-white">
               <RiCheckboxCircleLine className="text-[1.3rem] text-red-600" />
               Completely responsive features
             </li>
