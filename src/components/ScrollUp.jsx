@@ -24,8 +24,8 @@ export default function ScrollUp() {
 
   return (
     <div
-      className={`fixed right-6 bottom-16 inline-flex cursor-pointer items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white transition-all duration-300 xl:right-16 ${
-        visible ? "opacity-100" : "opacity-0"
+      className={`fixed right-6 inline-flex cursor-pointer items-center justify-center rounded-lg bg-red-600 p-3 text-[1.3rem] text-white transition-all duration-300 xl:right-16 ${
+        visible ? "bottom-16" : "-bottom-full"
       }`}
       onClick={scrollToTop}
     >
