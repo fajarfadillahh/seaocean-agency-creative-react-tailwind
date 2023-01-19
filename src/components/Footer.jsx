@@ -5,13 +5,13 @@ import FooterIcon from "../assets/images/icon.svg";
 
 export default function Footer() {
   return (
-    <footer className="footer pt-32 pb-8">
+    <footer className="footer pt-32 pb-8 transition-all duration-300 dark:bg-gray-900">
       <div className="footer__container container grid gap-24">
         <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12 xl:grid-cols-[1fr,repeat(3,0.5fr)]">
           <div className="footer__content">
             <Link
               to="/"
-              className="footer__content-link inline-flex items-center pb-4 font-serif text-[20px] text-gray-900"
+              className="footer__content-link inline-flex items-center pb-4 font-serif text-[20px] text-gray-900 dark:text-white"
             >
               <img
                 src={FooterIcon}
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900">
+            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900 dark:text-white">
               About Us
             </h3>
 
@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={url.toString()}>
                   <Link
                     to={url}
-                    className="footer__link text-[15px] text-gray-600 hover:text-red-600"
+                    className="footer__link text-[15px] text-gray-600 hover:text-red-600 dark:text-white dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900">
+            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900 dark:text-white">
               Our Information
             </h3>
 
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={url.toString()}>
                   <Link
                     to={url}
-                    className="footer__link text-[15px] text-gray-600 hover:text-red-600"
+                    className="footer__link text-[15px] text-gray-600 hover:text-red-600 dark:text-white dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900">
+            <h3 className="footer__content-title pb-6 font-serif text-[20px] text-gray-900 dark:text-white">
               My Account
             </h3>
 
@@ -89,7 +89,7 @@ export default function Footer() {
                 <li key={url.toString()}>
                   <Link
                     to={url}
-                    className="footer__link text-[15px] text-gray-600 hover:text-red-600"
+                    className="footer__link text-[15px] text-gray-600 hover:text-red-600 dark:text-white dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="footer__copy border-t border-gray-300 pt-8 text-center text-[15px] text-gray-600">
+        <p className="footer__copy border-t border-gray-300 pt-8 text-center text-[15px] text-gray-600 dark:border-t-gray-800 dark:text-white">
           © Copyrights 2022, all rights reserved - Develop by Fajar Fadillah A
           ❤️
         </p>
